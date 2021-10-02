@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat Box</title>
+    <meta property="og:description" content="Hashim's Chat Box!"/>
+    <meta name="theme-color" content="#ff748c">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="javascript/main.js"></script>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Chat Box</h1>
+    </div>
+    <div class="box" style="overflow-y: auto; overflow-x: hidden;">
+        <div id="texts" class="texts"></div>
+        <div class="line">
+            <div style="display: flex" class="chatArea">
+                <div style="display: flex; flex-direction: column; place-items: center;">
+                    <label for="chooseName" id="shortWarning" style="color: red;"></label><input id="chooseName" placeholder="Choose a Name" spellcheck="false">
+                </div>
+                <button style="align-self: flex-end; height: 21px;" class="confirmButton" id="confirmName" onclick="selectName()">Submit</button>
+                <div style="margin: 0 1%; text-align: left;" id="shownName">Your Name: ?</div>
+            </div>
+        </div>
+    </div>
+    <small style="bottom: 5px; position: absolute;">© Hashim 2021</small>
+</body>
+</html>

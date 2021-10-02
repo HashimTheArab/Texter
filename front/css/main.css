@@ -1,0 +1,27 @@
+.box {
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.line {
+    width: 500px;
+    height: 30px;
+    margin: 93.5% -.6%;
+    border: 3px solid black;
+}
+
+.chatArea{
+    margin: 4px 5%;
+}
+
+.confirmButton {
+    width: 85px;
+    height: 20px;
+}
+
+.texts {
+
+}
