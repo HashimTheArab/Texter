@@ -4,6 +4,7 @@ import (
 	"github.com/gorilla/websocket"
 	"net/http"
 	"strconv"
+	"os"
 )
 
 var clients = map[*websocket.Conn]bool{}
@@ -53,7 +54,11 @@ func main() {
 	}()
 
 	println("Starting server!")
-	if err := http.ListenAndServe(":80", nil); err != nil {
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"	
+	}
+	if err := http.ListenAndServe(":" + port, nil); err != nil {
 		panic(err)
 	}
 }
