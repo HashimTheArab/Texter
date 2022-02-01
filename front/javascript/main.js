@@ -1,6 +1,6 @@
 
 let username = "";
-let ip = 'ip of host'; // make sure to change this to your ip or the ip of whatever you're hosting it on
+let ip = 'hashim.ml'; // make sure to change this to your ip or the ip of whatever you're hosting it on
 let socket = new WebSocket(`ws://${ip}/ws`);
 
 socket.onopen = function(){
